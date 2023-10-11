@@ -1,0 +1,43 @@
+OBTENER TODOS LOS ESTUDIANTES
+http://localhost:8080/api/estudiante/find-all
+
+
+OBTENER UN ESTUDIANTE POR SU DOCUMENTO
+http://localhost:8080/api/estudiante/find-estudiante-by-documento/101200
+
+
+OBTENER UN ESTUDIANTE POR SU USUARIO INSTITUCIONAL
+http://localhost:8080/api/estudiante/find-estudiante-by-usuarios/juan.guillermo
+
+
+OBTENER TODAS LAS MATERIAS MATRICULADAS EN EL SEMESTRE
+http://localhost:8080/api/estudiante-materia/find-all
+
+
+OBTENER MATERIAS DE UN ESTUDIANTE POR SU DOCUMENTO
+http://localhost:8080/api/estudiante-materia/get-materia-estudiante/992023
+
+
+OBTENER TODAS LAS SOLICITUDES DE CANCELACION
+http://localhost:8080/api/solicitud-cancelacion/find-all
+
+
+OBTENER TODAS LAS SOLICITUDES DE CANCELACION DE UN ESTUDIANTE POR SU DOCUMENTO
+http://localhost:8080/api/solicitud-cancelacion/find-solicitud-por-documento/992023
+
+
+OBTENER SOLICITUD CANCELACION POR ID DE LA SOLICITUD
+http://localhost:8080/api/solicitud-cancelacion/find-solicitud-por-id/SC004
+
+
+ENVIAR SOLICITUD DE CANCELACION
+http://localhost:8080/api/cancel-courses-api/
+
+	{
+	    "idMateria": "M001",
+	    "user": "juan.guillermo",
+	    "motivo": "No entiendo nada, me voy."
+	}
+
+
+	
